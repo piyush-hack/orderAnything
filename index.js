@@ -36,7 +36,7 @@ const profilerouter = require("./routes/profile");
 const adminrouter = require("./routes/admin");
 const dprouter = require("./routes/delperProfile");
 
-
+// redirecting
 app.use("/user", userrouter);
 app.use("/profile", profilerouter);
 app.use("/admin", adminrouter);

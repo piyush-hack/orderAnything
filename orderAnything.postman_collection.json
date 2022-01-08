@@ -12,7 +12,7 @@
 					"name": "http://localhost:3000/user/register",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [ ],
 						"body": {
 							"mode": "raw",
 							"raw": "{\r\n    \"role\" : \"Customer\",\r\n    \"phone\" : \"7533946258\",\r\n    \"password\" : \"123456\",\r\n    \"confpassword\" : \"123456\"\r\n}",
