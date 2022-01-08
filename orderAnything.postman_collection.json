@@ -1,0 +1,729 @@
+{
+	"info": {
+		"_postman_id": "b4789ffb-f8ce-4d6c-8790-473161a85c5a",
+		"name": "orderAnything",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "userRoutes",
+			"item": [
+				{
+					"name": "http://localhost:3000/user/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"role\" : \"Customer\",\r\n    \"phone\" : \"7533946258\",\r\n    \"password\" : \"123456\",\r\n    \"confpassword\" : \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\" : \"7533946257\",\r\n    \"password\" : \"123456\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/user/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4NjllMDYxZTFlZTQ0M2MxMDVlNWMiLCJyb2xlIjoiQ3VzdG9tZXIiLCJpYXQiOjE2NDE2MjY5MjV9.axe1hfGckydSV0Nntg3N857d-RBLxnZr_mfS8JVWvXE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/user/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "profileRoutes",
+			"item": [
+				{
+					"name": "http://localhost:3000/profile/add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4NjllMDYxZTFlZTQ0M2MxMDVlNWMiLCJyb2xlIjoiQ3VzdG9tZXIiLCJpYXQiOjE2NDE2MjY5MjV9.axe1hfGckydSV0Nntg3N857d-RBLxnZr_mfS8JVWvXE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"piyush\",\r\n    \"address\": [\"police line ghaziabad\"],\r\n    \"dob\": \"9/10/2001\",\r\n    \"country\": \"India\",\r\n    \"state\": \"UttarPradesh\",\r\n    \"city\": \"Ghaziabad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/profile/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/profile/",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4NjllMDYxZTFlZTQ0M2MxMDVlNWMiLCJyb2xlIjoiQ3VzdG9tZXIiLCJpYXQiOjE2NDE2MjY5MjV9.axe1hfGckydSV0Nntg3N857d-RBLxnZr_mfS8JVWvXE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"piyush\",\r\n    \"address\": [\"police line ghaziabad\"],\r\n    \"dob\": \"9/10/2001\",\r\n    \"country\": \"India\",\r\n    \"state\": \"UttarPradesh\",\r\n    \"city\": \"Ghaziabad\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/profile/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/profile/editAddress",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ5MzgxN2ZmMGFjMTExODBhNTg4YjQiLCJyb2xlIjoiQ3VzdG9tZXIiLCJpYXQiOjE2NDE2MjU4OTN9.HDCd26s-fEbIpq59Om7PUGWsID4CToCx6EdtYD7_-8Q",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"address\": [\"police line ghaziabad\" , \"kot kalan -2 , shikarpur , Bulandshahr\"]\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/profile/editAddress",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"editAddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/profile/getAddress",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4NjllMDYxZTFlZTQ0M2MxMDVlNWMiLCJyb2xlIjoiQ3VzdG9tZXIiLCJpYXQiOjE2NDE1NzI4MzJ9.lZF0xflYMsnv37uJUckY0IIu5HzouGPDUFU1GTHw320",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/profile/getAddress",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"getAddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/profile/AddToCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4NjllMDYxZTFlZTQ0M2MxMDVlNWMiLCJyb2xlIjoiQ3VzdG9tZXIiLCJpYXQiOjE2NDE1NzI4MzJ9.lZF0xflYMsnv37uJUckY0IIu5HzouGPDUFU1GTHw320",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"catalog_id\" : \"61d877ac3f7e6840812f4a65\",\r\n    \"count\" : \"5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/profile/AddToCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"AddToCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/profile/RemoveFromCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4NjllMDYxZTFlZTQ0M2MxMDVlNWMiLCJyb2xlIjoiQ3VzdG9tZXIiLCJpYXQiOjE2NDE1NzI4MzJ9.lZF0xflYMsnv37uJUckY0IIu5HzouGPDUFU1GTHw320",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"catalog_id\" : \"61d877ac3f7e6840812f4a65\",\r\n    \"count\" : \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/profile/RemoveFromCart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"RemoveFromCart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/profile/cart",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4NjllMDYxZTFlZTQ0M2MxMDVlNWMiLCJyb2xlIjoiQ3VzdG9tZXIiLCJpYXQiOjE2NDE1NzI4MzJ9.lZF0xflYMsnv37uJUckY0IIu5HzouGPDUFU1GTHw320",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"catalog_id\" : \"61d877ac3f7e6840812f4a65\",\r\n    \"count\" : \"3\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/profile/cart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/profile/placeOrder",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4NjllMDYxZTFlZTQ0M2MxMDVlNWMiLCJyb2xlIjoiQ3VzdG9tZXIiLCJpYXQiOjE2NDE1NzI4MzJ9.lZF0xflYMsnv37uJUckY0IIu5HzouGPDUFU1GTHw320",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Items\" :\r\n    [\r\n        {\r\n            \"catalog_id\": \"61d875a83f7e6840812f4a5f\",\r\n            \"catalog_name\": \"chips\",\r\n            \"catalog_count\": \"8\",\r\n            \"catalog_address\": \"   Loc 1 (24x7 Sector 54, Gurgaon, Lat - 12.21, Long - 28.72),\"\r\n        }, \r\n        {\r\n            \"catalog_id\": \"61d877ac3f7e6840812f4a65\",\r\n            \"catalog_name\": \"Disprin \",\r\n            \"catalog_count\": \"8\",\r\n            \"catalog_address\": \"Loc 1 (Apollo Medicine, Sector 63, Gurgaon, Lat - 12.25, Long - 28.52)\"\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/profile/placeOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"profile",
+								"placeOrder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "adminRoutes",
+			"item": [
+				{
+					"name": "http://localhost:3000/admin/addCatalog",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4ODc4ZDhlNjQxYTRhMDBhY2Y3OTMiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2NDE1ODA0Mjl9.A7ZIzMFEwh34QtSK6YRS9-QyMgr4mfOUNFiiFKORrIc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"catalogname\": \"burger\",\r\n    \"categoryName\": \"Food and Beverages\",\r\n    \"Addresses\": [\"   Loc 3 (24x7 Sector 54, Gurgaon, Lat - 12.21, Long - 28.72),\", \"   Loc 4 (Big Bazaar, Sector 25, Gurgaon, Lat - 12.23, Long - 28.79)\"]\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/addCatalog",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"addCatalog"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/admin/allCatalogs",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4ODc4ZDhlNjQxYTRhMDBhY2Y3OTMiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2NDE1ODA0Mjl9.A7ZIzMFEwh34QtSK6YRS9-QyMgr4mfOUNFiiFKORrIc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/allCatalogs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"allCatalogs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/admin/editCatalogAddress",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4ODc4ZDhlNjQxYTRhMDBhY2Y3OTMiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2NDE1ODA0Mjl9.A7ZIzMFEwh34QtSK6YRS9-QyMgr4mfOUNFiiFKORrIc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"catalog_id\" : \"61d8993357d0d95d781d0f9b\",\r\n    \"address\" : [\r\n            \"   Loc 3 (24x7 Sector 54, Gurgaon, Lat - 12.21, Long - 28.72),\",\r\n            \"   Loc 4 (Big Bazaar, Sector 25, Gurgaon, Lat - 12.23, Long - 28.79)\",\r\n            \"   Loc 5 (24x7 Sector 54, Gurgaon, Lat - 12.21, Long - 28.72),\",\r\n            \"   Loc 6 (Big Bazaar, Sector 25, Gurgaon, Lat - 12.23, Long - 28.79)\"\r\n        ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/editCatalogAddress",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"editCatalogAddress"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/admin/orders",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4ODc4ZDhlNjQxYTRhMDBhY2Y3OTMiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2NDE1ODA0Mjl9.A7ZIzMFEwh34QtSK6YRS9-QyMgr4mfOUNFiiFKORrIc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"filter\" : \"Reached Store\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/admin/deliverypersons",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4ODc4ZDhlNjQxYTRhMDBhY2Y3OTMiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2NDE1ODA0Mjl9.A7ZIzMFEwh34QtSK6YRS9-QyMgr4mfOUNFiiFKORrIc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/deliverypersons",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"deliverypersons"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/admin/assignOrder",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4ODc4ZDhlNjQxYTRhMDBhY2Y3OTMiLCJyb2xlIjoiQWRtaW4iLCJpYXQiOjE2NDE1ODA0Mjl9.A7ZIzMFEwh34QtSK6YRS9-QyMgr4mfOUNFiiFKORrIc",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"phone\" : \"8171311266\",\r\n     \"order_id\" : \"61d887e3b51a2b5a141bf044\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/admin/assignOrder",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"admin",
+								"assignOrder"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "dpRoutes",
+			"item": [
+				{
+					"name": "http://localhost:3000/dp/add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4OGE3MGM1ZmY5NTVhZmM5NzZkNWIiLCJyb2xlIjoiRGVsaXZlcnkgUGVyc29uIiwiaWF0IjoxNjQxNTgxMTY4fQ.dYrmlYsXK-Z67cqrtmhLU8aaKQzc-hP2z0cED_CunFQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"ayush\",\r\n    \"address\": [\"murkarjinagar Delhi\"],\r\n    \"dob\": \"9/10/2001\",\r\n    \"country\": \"India\",\r\n    \"state\": \"UttarPradesh\",\r\n    \"city\": \"Delhi\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/dp/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dp",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/dp/assignedorders",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4OGE3MGM1ZmY5NTVhZmM5NzZkNWIiLCJyb2xlIjoiRGVsaXZlcnkgUGVyc29uIiwiaWF0IjoxNjQxNTgxMTY4fQ.dYrmlYsXK-Z67cqrtmhLU8aaKQzc-hP2z0cED_CunFQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"filter\" : \"Reached Store\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/dp/assignedorders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dp",
+								"assignedorders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:3000/dp/updateStatus",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MWQ4OGE3MGM1ZmY5NTVhZmM5NzZkNWIiLCJyb2xlIjoiRGVsaXZlcnkgUGVyc29uIiwiaWF0IjoxNjQxNTgxMTY4fQ.dYrmlYsXK-Z67cqrtmhLU8aaKQzc-hP2z0cED_CunFQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"order_id\" : \"61d883b27780bd0adc715dbb\",\r\n    \"orderStage\" : \"Reached Store\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/dp/updateStatus",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"dp",
+								"updateStatus"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
